@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "build": "mkdir -p dist && cp index.js dist/index.js",
+    "build": "sleep 100 && tsc",
     "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
   }
 }
